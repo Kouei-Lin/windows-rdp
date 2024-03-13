@@ -23,6 +23,8 @@
 腳本安裝需要套件，並編輯`.bashrc`讓`tty`直接`startx`進入[X](https://en.wikipedia.org/wiki/X_Window_System)，`rdesktop`需要`X`環境。
 
 ## 第一次rdesktop
+`$ startx`
+
 `$ rdesktop -f IP:port`
 
 第一次`rdesktop`需要手動，請先手動登入至少一次後再將`rdesktop -f IP:port`放入`.xinitrc`以後`X`會自動執行此指令。
