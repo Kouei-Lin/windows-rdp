@@ -9,6 +9,9 @@ if [[ ! $ID =~ ^[1-9][0-9]?$ ]]; then
     exit 1
 fi
 
+# Create directories if they don't exist
+mkdir -p vol/win$ID
+
 # Generate Docker Compose file
 cat <<EOF > docker-compose.yml
 version: "3"
