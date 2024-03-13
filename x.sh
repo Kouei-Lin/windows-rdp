@@ -20,4 +20,4 @@ echo "Please Enter Server IP:Port" && \
 read IP && \
 
 # Append command into .xinitrc
-echo "rdesktop -f $IP" >> ~/.xinitrc && \
+echo "rdesktop -f $IP" >> ~/.xinitrc
