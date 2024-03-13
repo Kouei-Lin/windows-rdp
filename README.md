@@ -25,14 +25,16 @@
 ## 第一次rdesktop
 `$ startx`
 
-`$ rdesktop -f IP:port`
+`$ rdesktop -f IP:port -u "USER"`
 
-第一次`rdesktop`需要手動，請先手動登入至少一次後再將`rdesktop -f IP:port`放入`.xinitrc`以後`X`會自動執行此指令。
+第一次`rdesktop`需要手動，請先手動登入至少一次後再編輯`.xinitrc`讓以後`X`自動執行此指令。
 
 ## .xinitrc自動執行rdesktop
 `$ cp xinitrc_example ~/.xinitrc`
 
 `$ vim ~/.xinitrc`
+
+完成後`X`會自動執行定義`rdesktop`指令。
 
 ## 重開機測試
 `$ sudo reboot`

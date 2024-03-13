@@ -1,1 +1,1 @@
-rdesktop -f IP:port
+rdesktop -f IP:port -u "USER"
