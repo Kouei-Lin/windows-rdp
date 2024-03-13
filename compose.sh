@@ -1,17 +1,16 @@
 #!/bin/bash
 
 # Prompt user for input ID
-read -p "Please enter an ID between 1 and 99: " ID && \
+read -p "Please enter an ID between 1 and 99: " ID
 
 # Validate input ID
 if [[ ! $ID =~ ^[1-9][0-9]?$ ]]; then
-    echo "Invalid ID. ID must be between 1 and 99." && \
+    echo "Invalid ID. ID must be between 1 and 99."
     exit 1
-fi && \
+fi
 
 # Generate Docker Compose file
-cat <<EOF > docker-compose.yml && \
-
+cat <<EOF > docker-compose.yml
 version: "3"
 services:
   windows:
@@ -30,6 +29,6 @@ services:
     environment:
       RAM_SIZE: "8G"
     volumes:
-      - ./vol/win$ID:/storage
+      - /vol/win$ID:/storage
 EOF
 
