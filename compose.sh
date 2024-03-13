@@ -28,7 +28,7 @@ services:
     stop_grace_period: 2m
     restart: on-failure
     environment:
-      RAM_SIZE: "6G"
+      RAM_SIZE: "8G"
     volumes:
       - /vol/win$ID:/storage
 EOF
