@@ -6,6 +6,7 @@ sudo apt install vim xorg rdesktop -y && \
 # Append script into ~/.bashrc
 cat <<EOF >> ~/.bashrc && \
 
+# Autostartx
 if [[ -z \$DISPLAY ]] && [[ \$(tty) = /dev/tty1 ]]; then
     echo "Starting X..."
     sleep 5
