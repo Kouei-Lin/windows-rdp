@@ -7,9 +7,9 @@ sudo apt install vim xorg rdesktop -y && \
 cat <<EOF >> ~/.bashrc && \
 
 if [[ -z \$DISPLAY ]] && [[ \$(tty) = /dev/tty1 ]]; then
-    read -t 5 -n 1 -p "Press 'Q' to quit " key
+    read -t 5 -n 1 -p "Press 'Q' to quit X" key
     if [[ "\$key" == "Q" ]]; then
-        echo "Quitting and returning to tty."
+        echo "Quitting X"
         exit
     else
         exec startx
