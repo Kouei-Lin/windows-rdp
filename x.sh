@@ -19,7 +19,7 @@ fi
 EOF
 
 # Ask user for input IP address
-echo "Please enter the IP address:" && \
+echo "Windows Server IP" && \
 read IP && \
 
 # Append command into .xinitrc
