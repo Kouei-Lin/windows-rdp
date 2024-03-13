@@ -20,7 +20,7 @@
 
 `./x.sh`
 
-腳本安裝需要套件，並編輯`.bashrc`讓如果是`tty`會直接`startx`進入[X](https://en.wikipedia.org/wiki/X_Window_System)。
+腳本安裝需要套件，並編輯`.bashrc`讓如果是`tty`會直接`startx`進入[X](https://en.wikipedia.org/wiki/X_Window_System)，`rdesktop`需要`X`環境。
 
 ## 第一次rdesktop
 `$ rdesktop -f IP:port`
