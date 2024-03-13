@@ -21,6 +21,3 @@ read IP && \
 
 # Append command into .xinitrc
 echo "rdesktop -f $IP" >> ~/.xinitrc && \
-
-# Reboot
-sudo reboot
