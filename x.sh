@@ -20,7 +20,7 @@ echo "Please Enter Server IP:Port" && \
 read IP && \
 
 # Append command into .xinitrc
-echo "rdesktop -f $IP" >> ~/.xinit && \
+echo "rdesktop -f $IP" >> ~/.xinitrc && \
 
 # Start X
 startx
