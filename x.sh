@@ -21,12 +21,3 @@ read IP && \
 
 # Append command into .xinitrc
 echo "rdesktop -f $IP" >> ~/.xinitrc && \
-
-# Start X
-startx && \
-
-# Sleep
-sleep 5 && \
-
-# rdesktop
-rdesktop -f $IP
