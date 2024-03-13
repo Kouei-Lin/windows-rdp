@@ -19,7 +19,7 @@ fi
 EOF
 
 # Ask user for input IP address
-echo "Please Enter Server IP" && \
+echo "Please Enter Server IP:Port" && \
 read IP && \
 
 # Append command into .xinitrc
