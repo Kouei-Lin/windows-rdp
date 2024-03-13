@@ -8,16 +8,9 @@ cat <<EOF >> ~/.bashrc && \
 
 # Autostartx
 if [[ -z \$DISPLAY ]] && [[ \$(tty) = /dev/tty1 ]]; then
-    echo "Starting X..."
+    echo "Starting X... Ctrl C to quit"
     sleep 5
     exec startx
 fi
 
 EOF
-
-# Ask user for input IP address
-echo "Please Enter Server IP:Port" && \
-read IP && \
-
-# Append command into .xinitrc
-echo "# rdesktop -f $IP" >> ~/.xinitrc
