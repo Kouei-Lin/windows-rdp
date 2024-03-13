@@ -25,7 +25,8 @@ echo "rdesktop -f $IP" >> ~/.xinitrc && \
 # Start X
 startx && \
 
-# Wait for X to start
+# Sleep
 sleep 5 && \
-# Run rdesktop
+
+# rdesktop
 rdesktop -f $IP
