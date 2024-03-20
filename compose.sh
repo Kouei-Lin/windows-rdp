@@ -33,6 +33,7 @@ services:
     restart: on-failure
     environment:
       RAM_SIZE: "8G"
+      # VERSION: "ttps://software.download.prss.microsoft.com/dbazure/Win11_23H2_Chinese_Traditional_x64v2.iso"
     volumes:
       - ./storage:/storage
 EOF
