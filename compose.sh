@@ -34,6 +34,6 @@ services:
     environment:
       RAM_SIZE: "8G"
     volumes:
-      - ./win$ID/storage:/storage
+      - ./storage:/storage
 EOF
 
