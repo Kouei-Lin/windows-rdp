@@ -34,6 +34,7 @@ services:
     environment:
       RAM_SIZE: "8G"
       # VERSION: "https://software.download.prss.microsoft.com/dbazure/Win11_23H2_Chinese_Traditional_x64v2.iso"
+      # MANUAL: "Y"
     volumes:
       - ./storage:/storage
 EOF
