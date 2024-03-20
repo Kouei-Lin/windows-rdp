@@ -10,7 +10,9 @@ if [[ ! $ID =~ ^[1-9][0-9]?$ ]]; then
 fi
 
 # Create directories if they don't exist
-mkdir -p vol/win$ID
+mkdir -p win$ID/storage
+
+cd win$ID
 
 # Generate Docker Compose file
 cat <<EOF > docker-compose.yml
@@ -32,6 +34,6 @@ services:
     environment:
       RAM_SIZE: "8G"
     volumes:
-      - ./vol/win$ID:/storage
+      - ./win$ID/storage:/storage
 EOF
 
