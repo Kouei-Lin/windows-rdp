@@ -41,3 +41,12 @@
 
 ## rdesktop
 於`rdesktop`時，登出用戶即可回到`RaspberryPi`系統。
+
+## Docker端
+`$ chmod +x compose.sh`
+
+`$ ./compose.sh`
+
+`compose.sh`會生成`win$ID/storage`來成為容器`storage`的`volume`如果有自訂當地`iso`，可直接放進`win$ID/storage`，安裝時會自行使用此`iso`。
+
+如果有線上自訂`iso`，可於`docker-compose.yml`的`environment`中添加`VERSION:"https//:example.com/win.iso"`。
