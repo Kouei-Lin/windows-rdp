@@ -1,6 +1,6 @@
 # RaspberryPi x Windows RDP
 
-## 燒錄RaspberryPi
+## RaspberryPi端
 前往[Raspberry Pi官網](https://www.raspberrypi.com/software/)下載軟體，並燒錄`Raspberry Pi`。
 燒錄好後，啟動`Raspberry Pi`並將其連結網路。燒錄時請將`ssh`功能啟用方便未來如有遠端需求，並記好帳密。
 
@@ -49,4 +49,4 @@
 
 `compose.sh`會生成`win$ID/storage`來成為容器`storage`的`volume`。
 
-如果有線上自訂`iso`，可於`docker-compose.yml`的`environment`中添加`VERSION:"https//:example.com/win.iso"`。
+如果有線上自訂`iso`，可於`docker-compose.yml`的`environment`中添加`VERSION:"https://xxx.com/win.iso"`。
