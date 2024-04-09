@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install required packages
-sudo apt install vim xorg rdesktop -y && \
+sudo apt install vim xorg freerdp2-x11 -y && \
 
 # Append script into ~/.bashrc
 cat <<EOF >> ~/.bashrc
