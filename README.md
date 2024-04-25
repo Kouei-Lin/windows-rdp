@@ -25,7 +25,7 @@
 ## 第一次rdesktop
 `$ startx`
 
-`$ rdesktop -f IP:port -u "USER"`
+`$ xfreerdp /v:192.168.1.100 /u:username /p:password /f #/multimon`
 
 第一次`rdesktop`需要手動，請先手動登入至少一次後再編輯`.xinitrc`讓以後`X`自動執行此指令。
 
