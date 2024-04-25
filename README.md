@@ -20,27 +20,27 @@
 
 `$ ./x.sh`
 
-腳本安裝需要套件，並編輯`.bashrc`讓`tty`直接`startx`進入[X](https://en.wikipedia.org/wiki/X_Window_System)，`rdesktop`需要`X`環境。
+腳本安裝需要套件，並編輯`.bashrc`讓`tty`直接`startx`進入[X](https://en.wikipedia.org/wiki/X_Window_System)，`freerdp`需要`X`環境。
 
-## 第一次rdesktop
+## 第一次freerdp
 `$ startx`
 
 `$ xfreerdp /v:192.168.1.100 /u:username /p:password /f #/multimon`
 
-第一次`rdesktop`需要手動，請先手動登入至少一次後再編輯`.xinitrc`讓以後`X`自動執行此指令。
+第一次`freerdp`需要手動，請先手動登入至少一次後再編輯`.xinitrc`讓以後`X`自動執行此指令。
 
-## .xinitrc自動執行rdesktop
+## .xinitrc自動執行freerdp
 `$ cp xinitrc_example ~/.xinitrc`
 
 `$ vim ~/.xinitrc`
 
-完成後`X`會自動執行定義`rdesktop`指令。
+完成後`X`會自動執行定義`freerdp`指令。
 
 ## 重開機測試
 `$ sudo reboot`
 
-## rdesktop
-於`rdesktop`時，登出用戶即可回到`RaspberryPi`系統。
+## freerdp
+於`freerdp`時，登出用戶即可回到`RaspberryPi`系統。
 
 ## Docker端
 `$ chmod +x compose.sh`
